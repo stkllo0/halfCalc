@@ -38,20 +38,25 @@ public class Main {
                     mchar[i] = input.charAt(i);
                     if (mchar[i] == '+') {
                         sum = a + b;
-                        System.out.println(sum);
+                        String resu = Integer.toString(sum);
+                        System.out.println(resu);
                     }
                     if (mchar[i] == '-') {
                         sum = a - b;
-                        System.out.println(sum);
+                        String resu = Integer.toString(sum);
+                        System.out.println(resu);
                     }
                     if (mchar[i] == '*') {
                         sum = a * b;
-                        System.out.println(sum);
+                        String resu = Integer.toString(sum);
+                        System.out.println(resu);
                     }
                     if (mchar[i] == '/') {
                         sum = a / b;
-                        System.out.println(sum);
+                        String resu = Integer.toString(sum);
+                        System.out.println(resu);
                     }
+
                 }
             }
         } else {
@@ -121,6 +126,86 @@ public class Main {
                 res.put(18, "XVIII");
                 res.put(19, "XIX");
                 res.put(20, "XX");
+                res.put(21, "XXI");
+                res.put(22, "XXII");
+                res.put(23, "XXIII");
+                res.put(24, "XXIV");
+                res.put(25, "XXV");
+                res.put(26, "XXVI");
+                res.put(27, "XXVII");
+                res.put(28, "XXVIII");
+                res.put(29, "XXIX");
+                res.put(30, "XXX");
+                res.put(31, "XXXI");
+                res.put(32, "XXXII");
+                res.put(33, "XXXIII");
+                res.put(34, "XXXIV");
+                res.put(35, "XXXV");
+                res.put(36, "XXXVI");
+                res.put(37, "XXXVII");
+                res.put(38, "XXXVIII");
+                res.put(39, "XXXIX");
+                res.put(40, "XL");
+                res.put(41, "XLI");
+                res.put(42, "XLII");
+                res.put(43, "XLIII");
+                res.put(44, "XLIV");
+                res.put(45, "XLV");
+                res.put(46, "XLVI");
+                res.put(47, "XLVII");
+                res.put(48, "XLVIII");
+                res.put(49, "XLIX");
+                res.put(50, "L");
+                res.put(51, "LI");
+                res.put(52, "LII");
+                res.put(53, "LIII");
+                res.put(54, "LIV");
+                res.put(55, "LV");
+                res.put(56, "LVI");
+                res.put(57, "LVII");
+                res.put(58, "LVIII");
+                res.put(59, "LIX");
+                res.put(60, "LX");
+                res.put(61, "LXI");
+                res.put(62, "LXII");
+                res.put(63, "LXIII");
+                res.put(64, "LXIV");
+                res.put(65, "LXV");
+                res.put(66, "LXVI");
+                res.put(67, "LXVII");
+                res.put(68, "LXVIII");
+                res.put(69, "LXIX");
+                res.put(70, "LXX");
+                res.put(71, "LXXI");
+                res.put(72, "LXXII");
+                res.put(73, "LXXIII");
+                res.put(74, "LXXIV");
+                res.put(75, "LXXV");
+                res.put(76, "LXXVI");
+                res.put(77, "LXXVII");
+                res.put(78, "LXXVIII");
+                res.put(79, "LXXIX");
+                res.put(80, "LXXX");
+                res.put(81, "LXXXI");
+                res.put(82, "LXXXII");
+                res.put(83, "LXXXIII");
+                res.put(84, "LXXXIV");
+                res.put(85, "LXXXV");
+                res.put(86, "LXXXVI");
+                res.put(87, "LXXXVII");
+                res.put(88, "LXXXVIII");
+                res.put(89, "LXXXIX");
+                res.put(90, "XC");
+                res.put(91, "XCI");
+                res.put(92, "XCII");
+                res.put(93, "XCIII");
+                res.put(94, "XCIV");
+                res.put(95, "XCV");
+                res.put(96, "XCVI");
+                res.put(97, "XCVII");
+                res.put(98, "XCVIII");
+                res.put(99, "XCIX");
+                res.put(100, "C");
 
                 Set<Integer> c = res.keySet();
                 if(res.containsKey(sum)){
