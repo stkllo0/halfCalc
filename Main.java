@@ -8,25 +8,24 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Enter expression in one line with blanks, ex. a + b: ");
-        calc();
+        Scanner scanner = new Scanner(System.in);
+        calc(String.valueOf(scanner));
     }
 
-    public static void calc() throws IOException {
+    public static String calc(String input) throws IOException {
         int result;
         char operation;
         Scanner scanner = new Scanner(System.in);
-        romanNumb resq = romanNumb.III;
-
         if (scanner.hasNextInt()) {
-            String input = scanner.nextLine();
-            if (input.length() > 7 | input.length() < 5) {
+            String inputUs = scanner.nextLine();
+            if (inputUs.length() > 7 | inputUs.length() < 5) {
                 try {
                     throw new IOException();
                 } finally {
                     System.out.println("Number of symbols is not correct");
                 }
             }
-            String[] str = input.split(" ");
+            String[] str = inputUs.split(" ");
             int a = Integer.parseInt(str[0]);
             int b = Integer.parseInt(str[2]);
             if (a > 10 | a < 1 | b < 1 | b > 10) {
@@ -34,8 +33,8 @@ public class Main {
             } else {
                 int sum;
                 char[] mchar = new char[10];
-                for (int i = 0; i < input.length(); i++) {
-                    mchar[i] = input.charAt(i);
+                for (int i = 0; i < inputUs.length(); i++) {
+                    mchar[i] = inputUs.charAt(i);
                     if (mchar[i] == '+') {
                         sum = a + b;
                         String resu = Integer.toString(sum);
@@ -218,9 +217,18 @@ public class Main {
 
 
         }
+        return calc(input);
 
     }
 }
+
+
+
+
+
+
+
+
 
 
 
